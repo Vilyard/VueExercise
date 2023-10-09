@@ -17,7 +17,15 @@ export default {
       copyrightText: "#A7A7A7",
       button: "#58C08E",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "first-image": "url(assets/Images/first-image.png)",
+        "second-image": "url(assets/Images/second-image.png)",
+        "third-image": "url(assets/Images/third-image.png)",
+        "logo-image": "url(assets/Images/logo-image.png)",
+        "logo-label": "url(assets/Images/logo-label.png)",
+      },
+    },
   },
   plugins: [],
 };

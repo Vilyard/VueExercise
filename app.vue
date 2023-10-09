@@ -1,5 +1,5 @@
 <template>
-  <div class="md:container md:mx-auto">
-    <MainPage />
+  <div class="full-width flex flex-col min-h-screen">
+    <MainSection class="flex-1" />
   </div>
 </template>
