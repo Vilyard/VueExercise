@@ -1,21 +1,24 @@
 <template>
+  <!-- grid/flex -->
   <div class="container-lg">
     <div
-      class="bg-first-image bg-relative w-auto h-auto bg-no-repeat bg-top bg-cover"
+      class="container-wrap p-5 bg-first-image bg-relative bg-no-repeat bg-center bg-cover grid"
     >
       <Navbar
         :buttons="buttons"
         :activeButton="activeButton"
         :toggleButton="toggleButton"
       />
-      <div class="text-mainText flex-1 text-left">
-        <div class="font-bold text-5x1">
+      <div
+        class="text-mainText grid-item flex flex-col justify-end md:w-2/3 md:pb-12 pl-4"
+      >
+        <div class="font-bold md:text-5xl pb-4">
           <p>
             Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
             incididunt.
           </p>
         </div>
-        <div class="text-base">
+        <div class="md:text-base text-sm">
           <p>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -66,6 +69,10 @@ export default {
 </script>
 
 <style scoped>
+.container-wrap {
+  min-height: 920px;
+  width: "100%";
+}
 .btn-clicked {
   @apply bg-button text-mainText w-32 h-11 rounded-full m-2;
 }
