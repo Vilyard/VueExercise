@@ -23,7 +23,11 @@
 </template>
 
 <script>
+import CustomArrow from "../assets/icons/CustomArrow.vue";
 export default {
+  components: {
+    CustomArrow,
+  },
   props: {
     title: String,
     subtitle: String,
@@ -35,7 +39,7 @@ export default {
   },
   computed: {
     cardClasses() {
-      return ["text-left", "p-4", "shadow-lg", this.bgColor];
+      return ["text-left", "p-4", "shadow-lg", this.bgColor].join("");
     },
     arrowContainerClasses() {
       return [

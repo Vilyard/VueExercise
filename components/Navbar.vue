@@ -2,10 +2,7 @@
   <header class="flex justify-between items-start">
     <!-- Logo -->
     <div class="inline-flex">
-      <div
-        class="bg-logo-image bg-relative bg-no-repeat w-10 align-middle h-10"
-      ></div>
-      <div class="bg-logo-label bg-relative bg-no-repeat w-40 h-32"></div>
+      <NavbarLogo />
     </div>
 
     <!-- Buttons for medium and larger screens -->
@@ -77,13 +74,17 @@
 
 <script>
 import { ref } from "vue";
-import HamburgerIcon from "./HamburgerIcon.vue";
-import CloseIcon from "./CloseIcon.vue";
+import HamburgerIcon from "../assets/icons/HamburgerIcon.vue";
+import CloseIcon from "../assets/icons/CloseIcon.vue";
+import NavbarLogo from "../assets/icons/NavbarLogo.vue";
+import CustomBlackArrow from "../assets/icons/CustomBlackArrow.vue";
 
 export default {
   components: {
     HamburgerIcon,
     CloseIcon,
+    NavbarLogo,
+    CustomBlackArrow,
   },
   props: {
     buttons: Array,
