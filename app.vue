@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 grid-rows-5 gap-3">
+  <div class="grid gap-3">
     <div class="col-span-2"><MainSection /></div>
     <div class="row-start-2 justify-center p-10 w-full">
       <Card
@@ -44,6 +44,10 @@
         bgColor="bg-blue-500"
       />
     </div>
-    <div class="col-span-2 justify-self-center self-center"><CustomForm /></div>
+
+    <div class="col-span-2 justify-self-center self-center pb-10">
+      <CustomForm />
+    </div>
   </div>
+  <CustomFooter />
 </template>
