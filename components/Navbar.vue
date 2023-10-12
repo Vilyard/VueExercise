@@ -4,7 +4,6 @@
     <div class="inline-flex">
       <NavbarLogo />
     </div>
-
     <!-- Buttons for medium and larger screens -->
     <div class="hidden lg:flex p-1 gap-1.5">
       <div
@@ -20,7 +19,8 @@
         </button>
         <div
           v-if="button.isClicked"
-          class="absolute left-0 p-10 text-menuText bg-mainText opacity-80 shadow-lg rounded-lg transform translate-y-6 w-popupMenuWidth h-popupMenuHeight"
+          class="absolute p-10 text-menuText bg-mainText opacity-80 shadow-lg rounded-lg transform translate-y-6 w-popupMenuWidth h-popupMenuHeight"
+          :class="{ 'left-0': index < 3, 'right-0': index >= 3 }"
         >
           <div class="grid grid-cols-2 gap-6">
             <div v-for="i in 4" :key="i" class="grid grid-cols-2 gap-1">

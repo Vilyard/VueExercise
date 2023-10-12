@@ -19,7 +19,7 @@
         <ThirdSection />
       </div>
       <div class="flex-1 pb-10">
-        <Card :cardDetails="joinOurTeamCard" class="pt-28 pr-20" />
+        <Card :cardDetails="joinOurTeamCard" class="pt-28 px-10" />
       </div>
     </div>
     <div class="md:flex md:justify-center pb-10">
