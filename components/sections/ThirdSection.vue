@@ -10,7 +10,7 @@
 
 <style scoped>
 .container-wrap {
-  min-height: 752px;
+  min-height: 635px;
   width: "100%";
 }
 </style>
