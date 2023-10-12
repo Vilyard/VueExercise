@@ -36,10 +36,10 @@
     </div>
     <!-- Hamburger menu for small screens -->
     <button @click="toggleMobileMenu" class="block lg:hidden p-2">
-      <!-- Toggle between hamburger and close (X) icons -->
       <component
         :is="isMobileMenuOpen ? 'CloseIcon' : 'HamburgerIcon'"
         :color="isMobileMenuOpen ? 'white' : 'white'"
+        class="h-6 w-6"
       />
     </button>
 

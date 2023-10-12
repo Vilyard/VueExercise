@@ -1,7 +1,7 @@
 <template>
   <div class="md:col-span-2 row-span-2">
-    <h2 class="text-4xl font-bold">Contact Us</h2>
-    <p class="pt-5 pb-5">
+    <h2 class="text-4xl font-bold p-5">Contact Us</h2>
+    <p class="p-5">
       Do you want to be a part of this network and amazing journey? Contact us,
       and we will get back to you.
     </p>
@@ -29,14 +29,13 @@
         class="col-span-2"
         v-model="email"
       />
-      <CustomInputFields
+      <CustomTextAreaField
         label="Message"
-        inputType="text"
         inputName="message"
         class="col-span-2 row-span-2"
         v-model="message"
       />
-      <div class="col-span-2 justify-self-end">
+      <div class="col-span-2 pr-4 flex justify-end items-center">
         <button
           class="w-40 h-14 bg-submitBtn text-mainText"
           @click="submitForm"
@@ -47,7 +46,6 @@
     </form>
   </div>
 </template>
-
 <script>
 import { ref } from "vue";
 

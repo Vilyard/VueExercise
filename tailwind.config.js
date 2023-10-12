@@ -18,6 +18,8 @@ export default {
       button: "#58C08E",
       fieldColor: "#F5F5F5",
       submitBtn: "#58C08E",
+      firstCard: "rgba(157, 210, 184, 0.46)",
+      secondCard: "rgba(255, 225, 122, 0.23)",
     },
     extend: {
       height: {
